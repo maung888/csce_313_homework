@@ -25,7 +25,7 @@ int main() {
         std::cout << "File Type: Symbolic Link\n";
     else if (S_ISFIFO(fileStat.st_mode))
         std::cout << "File Type: Pipe\n";
-    // ... you can add checks for other types like sockets, character devices, etc.
+    
 
     // Check owner's permissions
     std::cout << "Owner Permissions: ";

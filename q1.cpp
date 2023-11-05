@@ -1,7 +1,7 @@
 #include <iostream>
 #include <unistd.h>
 
-// Prototype of our assembly function
+
 extern "C" int openr(const char *pathname);
 
 int main(int argc, char *argv[]) {
