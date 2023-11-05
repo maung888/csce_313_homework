@@ -1,8 +1,12 @@
-.globl openr
-.type openr, @function
+.section .data
+
+.section .text
+.global openr
 
 openr:
-    movq $2, %rax  # sys_open
-    movq $0, %rsi  # O_RDONLY
-    syscall
+    
+    mov $2, %rax            
+    mov $0, %rsi           
+    xor %rdx, %rdx          
+    syscall                
     ret
